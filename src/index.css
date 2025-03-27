@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+article {
+  scroll-margin-top: 8vh;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #c64a4a transparent; 
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+  right: 0; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #c64a4a;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.color-picker {
+  transform: translateX(9.7rem);
+  transition: transform 0.25s ease-in-out;
+}
+
+.filter-button{
+  transform: translateX(12.3rem);
+  transition: transform 0.3s ease-in-out;
+}
+
+.filter-button:hover{
+  transform: translateX(0rem);
+}
+
+.filter-button:hover .color-picker {
+  transform: translateX(0rem);
+}
+
+
