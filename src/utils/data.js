@@ -1,4 +1,5 @@
 import { assets } from "../assets/assets"
+import { Board, Bulb, Chart,Shield, Table, Trophy } from "../components/icons"
 
 // export const databaseUrl = "http://localhost:8000"
 export const databaseUrl = "https://portal.epahubb.com"
@@ -17,7 +18,16 @@ export const links = [
       { name: "Contact Us", url: "#contact-us" },
     ],
   },
-  { id: 2, name: "Features", subLinks: [] },
+  {
+    id: 2,
+    name: "Services",
+    subLinks: [
+      { name: "Graphic Design", url: "/graphic-design" },
+      { name: "Cyber Security", url: "/cyber-security" },
+      { name: "It Consultancy", url: "/it-consult" },
+      { name: "Software", url: "/software" },
+    ],
+  },
   {
     id: 3,
     name: "Products",
@@ -97,6 +107,74 @@ export const faqs = [
     question: "How does Epahubb stay innovative in its approach?",
     answer:
       "Epahubb stays innovative by leveraging the latest technologies, prioritizing continuous learning, fostering a culture of creativity, and collaborating closely with clients to deliver tailored, forward-thinking solutions that meet evolving industry needs.",
+  },
+]
+
+export const graphicDesignRevenue = [
+  {
+    id: 1,
+    title: "Creative Unique Designs",
+    description:
+      "We craft unique, visually compelling designs tailored to your brand’s identity, ensuring originality, market appeal, and strong audience engagement.",
+    icons: <Board />,
+  },
+  {
+    id: 2,
+    title: "Competitive Advantage",
+    description:
+      "Our designs help your brand stand out with visually striking, market-driven solutions that attract and engage customers effectively.",
+    icons: <Bulb />,
+  },
+  {
+    id: 3,
+    title: "Professional Quality",
+    description:
+      "We maintain high design standards, delivering polished, professional, and visually striking graphics that enhance brand credibility and impact.",
+    icons: <Shield />,
+  },
+  {
+    id: 4,
+    title: "Timely Delivery",
+    description:
+      "We prioritize efficiency and reliability, ensuring high-quality designs are delivered on time without compromising creativity or detail.",
+    icons: <Chart />,
+  },
+  {
+    id: 5,
+    title: "Brand Enhancement",
+    description:
+      "We create strategic and cohesive designs that strengthen brand identity, ensuring consistency, recognition, and a lasting impression on audiences.",
+    icons: <Trophy />,
+  },
+  {
+    id: 6,
+    title: "Diverse Design Services",
+    description:
+      "We offer a wide range of design solutions, including branding, marketing materials, packaging, UI/UX, and motion graphics.",
+    icons: <Table />,
+  },
+]
+
+export const company = [
+  {
+    id: 1,
+    link: "#about-us",
+    name:'About Us'
+  },
+  {
+    id: 1,
+    link: "#careers",
+    name: 'Careers'
+  },
+  {
+    id: 1,
+    link: "#our-blog",
+    name:'Our Blog'
+  },
+  {
+    id: 1,
+    link: "#contact-us",
+    name:'Contact Us'
   },
 ]
 

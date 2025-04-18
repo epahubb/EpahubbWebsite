@@ -18,6 +18,69 @@ export const Bulb = () => {
   )
 }
 
+export const Chart = () => {
+  const { selectedColor } = useGlobalContext()
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke-width='1.5'
+      stroke='currentColor'
+      className='w-[3rem] h-[3rem] xl:w-[4rem] xl:h-[4rem] '
+      style={{color: selectedColor}}
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z'
+      />
+    </svg>
+  )
+}
+
+export const Table = () => {
+  const { selectedColor } = useGlobalContext()
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke-width='1.5'
+      stroke='currentColor'
+      className='w-[3rem] h-[3rem] xl:w-[4rem] xl:h-[4rem] '
+      style={{ color: selectedColor }}
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0 1 12 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5'
+      />
+    </svg>
+  )
+}
+
+export const Trophy = ()=> {
+  const { selectedColor } = useGlobalContext()
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke-width='1.5'
+      stroke='currentColor'
+      className='w-[3rem] h-[3rem] xl:w-[4rem] xl:h-[4rem] '
+      style={{ color: selectedColor }}
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0'
+      />
+    </svg>
+  )
+}
+
 export const Shield = () => {
   const { selectedColor } = useGlobalContext()
 
@@ -91,18 +154,18 @@ export const monitor = () => {
 export const HamburgerDark = () => {
   return (
     <svg
-      clip-rule='evenodd'
-      fill-rule='evenodd'
-      stroke-linejoin='round'
-      stroke-miterlimit='2'
+      clipRule='evenodd'
+      fillRule='evenodd'
+      strokeLinejoin='round'
+      strokeMiterlimit='2'
       viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
-      className='w-[2.3rem] h-[2.3rem] text-black'
+      className='w-[1.7rem] h-[1.7rem] text-black'
       fill='currentColor'
     >
       <path
         d='m13 16.745c0-.414-.336-.75-.75-.75h-9.5c-.414 0-.75.336-.75.75s.336.75.75.75h9.5c.414 0 .75-.336.75-.75zm9-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm-4-5c0-.414-.336-.75-.75-.75h-14.5c-.414 0-.75.336-.75.75s.336.75.75.75h14.5c.414 0 .75-.336.75-.75z'
-        fill-rule='nonzero'
+        fillRule='nonzero'
       />
     </svg>
   )
@@ -111,18 +174,18 @@ export const HamburgerDark = () => {
 export const HamburgerWhite = () => {
   return (
     <svg
-      clip-rule='evenodd'
-      fill-rule='evenodd'
-      stroke-linejoin='round'
-      stroke-miterlimit='2'
+      clipRule='evenodd'
+      fillRule='evenodd'
+      strokeLinejoin='round'
+      strokeMiterlimit='2'
       viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
-      className='w-[2.3rem] h-[2.3rem] text-white'
+      className='w-[1.7rem] h-[1.7rem] text-white'
       fill='currentColor'
     >
       <path
         d='m13 16.745c0-.414-.336-.75-.75-.75h-9.5c-.414 0-.75.336-.75.75s.336.75.75.75h9.5c.414 0 .75-.336.75-.75zm9-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm-4-5c0-.414-.336-.75-.75-.75h-14.5c-.414 0-.75.336-.75.75s.336.75.75.75h14.5c.414 0 .75-.336.75-.75z'
-        fill-rule='nonzero'
+        fillRule='nonzero'
       />
     </svg>
   )
@@ -131,13 +194,13 @@ export const HamburgerWhite = () => {
 export const ClosesHamburgerDark = () => {
   return (
     <svg
-      clip-rule='evenodd'
-      fill-rule='evenodd'
-      stroke-linejoin='round'
-      stroke-miterlimit='2'
+      clipRule='evenodd'
+      fillRule='evenodd'
+      strokeLinejoin='round'
+      strokeMiterlimit='2'
       viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
-      className='w-[2.3rem] h-[2.3rem] text-[#b1b7cd]'
+      className='w-[1.7rem] h-[1.7rem] text-[#b1b7cd]'
       fill='currentColor'
     >
       <path d='m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z' />
@@ -148,13 +211,13 @@ export const ClosesHamburgerDark = () => {
 export const ClosesHamburgerWhite = () => {
   return (
     <svg
-      clip-rule='evenodd'
-      fill-rule='evenodd'
-      stroke-linejoin='round'
-      stroke-miterlimit='2'
+      clipRule='evenodd'
+      fillRule='evenodd'
+      strokeLinejoin='round'
+      strokeMiterlimit='2'
       viewBox='0 0 24 24'
       xmlns='http://www.w3.org/2000/svg'
-      className='w-[2.3rem] h-[2.3rem] text-[#a9a9a9]'
+      className='w-[1.7rem] h-[1.7rem] text-[#a9a9a9]'
       fill='currentColor'
     >
       <path d='m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z' />

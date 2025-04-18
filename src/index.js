@@ -8,11 +8,9 @@ import "@splidejs/splide/dist/css/splide.min.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-  
-    <BrowserRouter>
-      <Context>
+  <BrowserRouter>
+    <Context>
         <App />
-      </Context>
-    </BrowserRouter>
-  
+    </Context>
+  </BrowserRouter>
 )

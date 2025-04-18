@@ -7,8 +7,11 @@ const ColorPicker = () => {
 
   return (
     <div className='hidden fixed right-0 top-[20%] lg:flex items-start filter-button'>
-      {/* filter icon */}
-      <button className={`bg-[${selectedColor}] p-[.5rem] rounded-sm mt-[1rem]`}>
+      {/* filter icon - using inline style for dynamic color */}
+      <button
+        style={{ backgroundColor: selectedColor }}
+        className='p-[.5rem] rounded-sm mt-[1rem]'
+      >
         <LiaSlidersHSolid className='text-[1.4rem] md:text-[2rem] text-white' />
       </button>
 
@@ -28,22 +31,19 @@ const ColorPicker = () => {
           {colors.map((color) => (
             <button
               key={color}
-              className={`h-[2rem] bg-[${color}] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md`}
+              style={{ backgroundColor: color }}
+              className={`h-[2rem] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md`}
               onClick={() => setSelectedColor(color)}
               title={`Select ${color}`}
             ></button>
           ))}
-          {/* <button className='bg-[#1680fb] h-[2rem] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md'></button>
-          <button className='bg-[#ff1e1a] h-[2rem] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md'></button>
-          <button className='bg-[#7827e6] h-[2rem] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md'></button>
-          <button className='bg-[#be6cbe] h-[2rem] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md'></button>
-          <button className='bg-[#3eb1ff] h-[2rem] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md'></button>
-          <button className='bg-[#c73e9b] h-[2rem] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md'></button>
-          <button className='bg-[#7b5dd6] h-[2rem] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md'></button>
-          <button className='bg-[#0fbc49] h-[2rem] w-[2rem] lg:h-[2.6rem] lg:w-[2.6rem] rounded-md'></button> */}
         </div>
         <div className='mt-[1rem]'>
-          <button className={`capitalize bg-[${selectedColor}] py-[.2rem] px-[.3rem] rounded-sm text-[14px] lg:py-[.4rem] lg:px-[.6rem] lg:text-[16px]`} onClick={()=>setSelectedColor(colors[0])}>
+          <button
+            style={{ backgroundColor: selectedColor }}
+            className='capitalize py-[.2rem] px-[.3rem] rounded-sm text-[14px] lg:py-[.4rem] lg:px-[.6rem] lg:text-[16px] text-white'
+            onClick={() => setSelectedColor(colors[0])}
+          >
             reset color
           </button>
         </div>

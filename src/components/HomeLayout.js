@@ -1,4 +1,3 @@
-import { useGlobalContext } from "../Context"
 import CreateProjectModal from "./CreateProjectModal"
 import Footer from "./Footer"
 import {
@@ -16,10 +15,9 @@ import TrustedClients from "./HomeSections/TrustedClients"
 import ModalComponent from "./ModalComponent"
 
 const HomeLayout = () => {
-  const { darkMode } = useGlobalContext()
   return (
-    <section className={`${darkMode && "dark"}`}>
-      <About darkMode={darkMode} />
+    <section>
+      <About/>
       <Features />
       <WhyEpahubb />
       {/* <Audience /> */}

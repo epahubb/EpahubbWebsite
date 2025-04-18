@@ -5,13 +5,19 @@ import { links } from "../../utils/data"
 import { MdOutlineKeyboardArrowDown } from "react-icons/md"
 import { IoMoonOutline } from "react-icons/io5"
 import { LuSunMoon } from "react-icons/lu"
+import { Link } from "react-router-dom"
 
 const Sidebar = () => {
-  const { darkMode, closeSideBar, isSidebarOpen,toggleTheme } = useGlobalContext()
+  const { darkMode, closeSideBar, isSidebarOpen, toggleTheme } =
+    useGlobalContext()
   const [activeLink, setActiveLink] = useState(null)
 
   const handleActiveLink = (id) => {
     setActiveLink((prev) => (prev === id ? null : id))
+  }
+
+  const handleLinkClick = () => {
+      closeSideBar()
   }
 
   return (
@@ -56,7 +62,6 @@ const Sidebar = () => {
                 className={`overflow-hidden transition-[max-height] duration-[.8s] ease-in-out ${
                   activeLink === link.id ? "max-h-[1000px]" : "max-h-0"
                 }`}
-                onClick={closeSideBar}
               >
                 {link.subLinks?.length > 0 &&
                   link.subLinks.map((sublink, index) => (
@@ -64,13 +69,30 @@ const Sidebar = () => {
                       key={index}
                       className='text-[14.5px] text-[#747474] font-semibold dark:text-[#b1b7cd] px-3 py-[.66rem]'
                     >
-                      <a
-                        href={sublink.url}
-                        target={link.id === 3 ? "_blank" : "_self"}
-                        rel={link.id === 3 ? "noopener noreferrer" : ""}
-                      >
-                        {sublink.name}
-                      </a>
+                      {link.id === 1 ? (
+                        <a
+                          href={sublink.url}
+                          onClick={() => handleLinkClick()}
+                        >
+                          {sublink.name}
+                        </a>
+                      ) : link.id === 2 ? (
+                        <Link
+                          to={sublink.url}
+                          onClick={() => handleLinkClick()}
+                        >
+                          {sublink.name}
+                        </Link>
+                      ) : (
+                        <a
+                          href={sublink.url}
+                          target={link.id === 3 ? "_blank" : "_self"}
+                          rel={link.id === 3 ? "noopener noreferrer" : ""}
+                          onClick={() => handleLinkClick()}
+                        >
+                          {sublink.name}
+                        </a>
+                      )}
                     </li>
                   ))}
               </ul>
@@ -81,20 +103,25 @@ const Sidebar = () => {
           <a
             href='https://epahubb.com'
             className='bg-[#c64a4a] w-[100%] px-4 py-[.8rem] text-[16px] text-white font-semibold text-start'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             Sign in
           </a>
         </button>
         <div className='absolute bottom-2 left-0 right-0 grid place-items-center'>
-          <button onClick={toggleTheme} className="flex items-center gap-4 py-4">
+          <button
+            onClick={toggleTheme}
+            className='flex items-center gap-4 py-4'
+          >
             <span className='dark:text-[#fd7e41]'>
               {darkMode ? (
                 <>
-                  <LuSunMoon className="text-[20px]" />
+                  <LuSunMoon className='text-[20px]' />
                 </>
               ) : (
                 <>
-                  <IoMoonOutline className="text-[20px]" />
+                  <IoMoonOutline className='text-[20px]' />
                 </>
               )}
             </span>
