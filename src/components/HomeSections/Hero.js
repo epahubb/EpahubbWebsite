@@ -16,7 +16,7 @@ const Hero = () => {
           engineering, and digital marketing.
         </p></div>
         <div data-aos='fade-up' className='flex items-center justify-center mt-[2rem] md:items-start md:justify-start'>
-          <button className={`bg-[${selectedColor}] capitalize text-white w-[60%] md:w-[50%] xl:w-[35%] py-[.5rem] border-transparent text-center text-[18px] xl:text-[19px] rounded-[.2rem] font-semibold font-jakarta border-solid border-2 hover:bg-transparent hover:border-white transition duration-300 ease-in-out `} onClick={openProjectModal}>
+          <button className={`bg-[${selectedColor}] capitalize text-white w-[60%] md:w-[50%] xl:w-[35%] py-[.5rem] border-transparent text-center text-[18px] xl:text-[19px] rounded-[.2rem] font-semibold font-jakarta border-solid border-2 hover:bg-transparent hover:border-white transition duration-300 ease-in-out `} onClick={openProjectModal} style={{backgroundColor:selectedColor}}>
             try epahubb
           </button>
         </div>

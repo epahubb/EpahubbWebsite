@@ -1,0 +1,8 @@
+export {default as ItConsultancyAbout} from './ItConsultancyAbout'
+export {default as ItConsultancyHero} from './ItConsultancyHero'
+export {default as ItConsultancyHeader} from './ItConsultancyHeader'
+export {default as EveryThingInPlace} from './EveryThingInPlace'
+export {default as ItCompliance} from './ItCompliance'
+export {default as ResourcePlanning} from './ResourcePlanning'
+export {default as Productivity} from './Productivity'
+export {default as GetStarted} from './GetStarted'

@@ -9,9 +9,10 @@ module.exports = {
       },
       colors: {
         primaryBackground: "#8A49E1",
+        itHeroBackground: "#BE6CBE30",
         primary: "#FFFFFF",
         primaryDark: "#232734",
-        "white-transparent": "rgba(255, 255, 255, 0.5)",
+        "white-transparent": "rgba(255, 255, 255, 0.7)",
         "dark-transparent": "rgba(0, 0, 0, 0.3)",
         darkText: "#B1B7CD",
         lightText: "#838383",

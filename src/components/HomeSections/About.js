@@ -1,27 +1,19 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import Header from "../Header"
 import { Hero } from "./index"
+import { useGlobalContext } from "../../Context"
 
 const About = () => {
-  const [isSticky, setIsSticky] = useState(false)
-
-  const handleScroll = () => {
-    if (window.scrollY > 40) {
-      setIsSticky(true)
-    } else {
-      setIsSticky(false)
-    }
-  }
-
+  const { handleScroll} = useGlobalContext()
   
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  }, [handleScroll])
 
   return (
     <article className='w-full bg-primaryBackground relative'>
-      <Header isSticky={isSticky} />
+      <Header/>
       <Hero />
     </article>
   )

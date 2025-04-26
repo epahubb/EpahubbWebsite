@@ -1,2 +1,6 @@
 export { default as HomePage } from "./HomePage"
 export { default as ErrorPage } from "./ErrorPage"
+export { default as GraphicDesign } from "./GraphicDesign"
+export { default as CyberSecurity } from "./CyberSecurity"
+export { default as ItConsultancy } from "./ItConsultancy"
+export { default as Software } from "./Software"

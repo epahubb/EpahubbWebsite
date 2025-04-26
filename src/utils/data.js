@@ -1,4 +1,5 @@
 import { assets } from "../assets/assets"
+import { Board, Bulb, Chart,Cloud,Data,Desktop,Encrypt,Protected,Security,Shield, Table, Trophy } from "../components/icons"
 
 // export const databaseUrl = "http://localhost:8000"
 export const databaseUrl = "https://portal.epahubb.com"
@@ -17,7 +18,16 @@ export const links = [
       { name: "Contact Us", url: "#contact-us" },
     ],
   },
-  { id: 2, name: "Features", subLinks: [] },
+  {
+    id: 2,
+    name: "Services",
+    subLinks: [
+      { name: "Graphic Design", url: "/graphic-design" },
+      { name: "Cyber Security", url: "/cyber-security" },
+      { name: "It Consultancy", url: "/it-consult" },
+      { name: "Software", url: "/software" },
+    ],
+  },
   {
     id: 3,
     name: "Products",
@@ -97,6 +107,119 @@ export const faqs = [
     question: "How does Epahubb stay innovative in its approach?",
     answer:
       "Epahubb stays innovative by leveraging the latest technologies, prioritizing continuous learning, fostering a culture of creativity, and collaborating closely with clients to deliver tailored, forward-thinking solutions that meet evolving industry needs.",
+  },
+]
+
+export const graphicDesignRevenue = [
+  {
+    id: 1,
+    title: "Creative Unique Designs",
+    description:
+      "We craft unique, visually compelling designs tailored to your brand’s identity, ensuring originality, market appeal, and strong audience engagement.",
+    icons: <Board />,
+  },
+  {
+    id: 2,
+    title: "Competitive Advantage",
+    description:
+      "Our designs help your brand stand out with visually striking, market-driven solutions that attract and engage customers effectively.",
+    icons: <Bulb />,
+  },
+  {
+    id: 3,
+    title: "Professional Quality",
+    description:
+      "We maintain high design standards, delivering polished, professional, and visually striking graphics that enhance brand credibility and impact.",
+    icons: <Shield />,
+  },
+  {
+    id: 4,
+    title: "Timely Delivery",
+    description:
+      "We prioritize efficiency and reliability, ensuring high-quality designs are delivered on time without compromising creativity or detail.",
+    icons: <Chart />,
+  },
+  {
+    id: 5,
+    title: "Brand Enhancement",
+    description:
+      "We create strategic and cohesive designs that strengthen brand identity, ensuring consistency, recognition, and a lasting impression on audiences.",
+    icons: <Trophy />,
+  },
+  {
+    id: 6,
+    title: "Diverse Design Services",
+    description:
+      "We offer a wide range of design solutions, including branding, marketing materials, packaging, UI/UX, and motion graphics.",
+    icons: <Table />,
+  },
+]
+
+export const company = [
+  {
+    id: 1,
+    link: "#about-us",
+    name:'About Us'
+  },
+  {
+    id: 1,
+    link: "#careers",
+    name: 'Careers'
+  },
+  {
+    id: 1,
+    link: "#our-blog",
+    name:'Our Blog'
+  },
+  {
+    id: 1,
+    link: "#contact-us",
+    name:'Contact Us'
+  },
+]
+
+export const itConsultancy = [
+  {
+    id: 1,
+    title: "IT Strategy & Digital Transformation",
+    description:
+      "IT Strategy & Digital Transformation aligns technology with business goals, integrating AI, IoT, and automation for efficiency, scalability, and innovation.",
+    icons: <Encrypt />,
+  },
+  {
+    id: 2,
+    title: "Software & Web Development Consulting",
+    description:
+      "Software & Web Development Consulting advises on custom software, mobile apps, and web solutions, ensuring performance, security, scalability, and seamless user experience.",
+    icons: <Desktop />,
+  },
+  {
+    id: 3,
+    title: "Cybersecurity Consulting",
+    description:
+      "Cybersecurity Consulting assesses risks, implements security frameworks, ensures compliance, and protects data, networks, and systems from evolving cyber threats.",
+    icons: <Security />,
+  },
+  {
+    id: 4,
+    title: "Data Analytics and Business Intelligence",
+    description:
+      "Data Analytics & Business Intelligence leverages AI-driven insights to enhance decision-making, optimize operations, and uncover growth opportunities through advanced data analysis.",
+    icons: <Data />,
+  },
+  {
+    id: 5,
+    title: "Cloud Computing & Infrastructure",
+    description:
+      "Cloud Computing & Infrastructure focuses on cloud migration, management, security, and optimization, ensuring scalable, cost-effective, and efficient IT operations.",
+    icons: <Protected />,
+  },
+  {
+    id: 6,
+    title: "IT Support and Managed Services",
+    description:
+      "IT Support & Managed Services provides 24/7 technical support, system monitoring, and maintenance to ensure seamless, secure, and efficient business operations.",
+    icons: <Cloud />,
   },
 ]
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { assets } from "../assets/assets"
 import { useGlobalContext } from "../Context"
 import { links } from "../utils/data"
@@ -5,13 +6,14 @@ import Sidebar from "./HomeSections/Sidebar"
 import { HamburgerDark, HamburgerWhite } from "./icons"
 import { MdOutlineArrowDropDown } from "react-icons/md"
 
-const Header = ({ isSticky }) => {
-  const { darkMode, openSidebar, closeSideBar, selectedColor } =
+const Header = () => {
+  const { darkMode, openSidebar, closeSideBar, selectedColor, isSticky } =
     useGlobalContext()
 
   const isSmallScreen = window.innerWidth < 1024
 
   const productLinks = links[2].subLinks
+  const servicesLinks = links[1].subLinks
 
   return (
     <header
@@ -19,18 +21,18 @@ const Header = ({ isSticky }) => {
     fixed top-0 left-0 right-0 transition-all duration-500 ease-in-out z-40
     ${
       isSticky
-        ? "lg:fixed shadow-sm bg-[#FFFFFFFA] dark:bg-[#1d222f] lg:bg-[#FFFFFFFA] lg:dark:bg-[#1d222f] xl:h-[8vh]"
+        ? "lg:fixed shadow-sm bg-[#FFFFFFFA] dark:bg-[#1d222f] lg:bg-white-transparent lg:backdrop-blur-md lg:dark:bg-[#1d222f] xl:h-[9vh]"
         : "lg:bg-primaryBackground dark:bg-[#1d222f] lg:dark:bg-primaryBackground"
     }`}
     >
-      <div>
+      <Link to={"/"}>
         {isSticky ? (
           <>
             {isSmallScreen ? (
               <>
                 <img
                   src={assets.epahubb_logo}
-                  className='w-[8.5rem] lg:w-[10rem] xl:w-auto'
+                  className='w-[7.3rem] md:w-[8rem] lg:w-[8rem] xl:w-[9rem]'
                   alt=''
                 />
               </>
@@ -38,7 +40,7 @@ const Header = ({ isSticky }) => {
               <>
                 <img
                   src={assets.epahubb_logo}
-                  className='w-[8.5rem] lg:w-[10rem] xl:w-auto'
+                  className='w-[7.3rem] md:w-[8rem] lg:w-[7rem] xl:w-[8rem]'
                   alt=''
                 />
               </>
@@ -50,7 +52,7 @@ const Header = ({ isSticky }) => {
               <>
                 <img
                   src={assets.epahubb_logo}
-                  className='w-[8.5rem] lg:w-[10rem] xl:w-auto'
+                  className='w-[7.3rem] md:w-[8rem] lg:w-[8rem] xl:w-[9rem]'
                   alt=''
                 />
               </>
@@ -58,27 +60,26 @@ const Header = ({ isSticky }) => {
               <>
                 <img
                   src={assets.epahubb_logo_two}
-                  className='w-[8.5rem] lg:w-[10rem] xl:w-auto'
+                  className='w-[7.3rem] md:w-[8rem] lg:w-[8rem] xl:w-[9rem]'
                   alt=''
                 />
               </>
             )}
           </>
         )}
-      </div>
+      </Link>
 
       {/* links start */}
       <div className='hidden lg:block'>
         <ul className='flex items-center gap-[2rem]'>
           <li className='flex items-center gap-1 relative cursor-pointer z-0 group py-[.6rem]'>
-            <a
-              href='#about-us'
-              className={`capitalize lg:text-[18px] xl:text-[18px] font-medium ${
+            <span
+              className={`capitalize lg:text-[15px] xl:text-[17px] font-medium ${
                 isSticky ? "dark:text-darkText" : "text-white"
               }`}
             >
               <span>About Us</span>
-            </a>
+            </span>
             <span>
               <MdOutlineArrowDropDown
                 className={`text-[1.5rem] ${
@@ -108,20 +109,41 @@ const Header = ({ isSticky }) => {
             </div>
             {/* sublinks of about ends */}
           </li>
-          <li>
-            <a
-              href='#features'
-              className={`capitalize lg:text-[18px] xl:text-[18px] font-medium ${
+          <li className='flex items-center gap-1 relative cursor-pointer z-0 group py-[.6rem]'>
+            <span
+              className={`capitalize lg:text-[15px] xl:text-[17px] font-medium ${
                 isSticky ? "dark:text-darkText" : "text-white"
               } `}
             >
-              Features
-            </a>
+              Services
+            </span>
+            <span>
+              <MdOutlineArrowDropDown
+                className={`text-[1.5rem] ${
+                  isSticky ? "dark:text-darkText" : "text-white"
+                }`}
+              />
+            </span>
+            {/* services links */}
+            <div className='absolute capitalize shadow-md top-[2.6rem] left-1/2 transform -translate-x-1/2 bg-white rounded-[.3rem] dark:bg-[#403f52] hidden group-hover:block'>
+              <div className='w-max grid grid-cols-3 gap-4 p-4'>
+                {servicesLinks.map((sublink, index) => {
+                  return (
+                    <span
+                      key={index}
+                      className='py-[.4rem] px-[1rem] rounded-md hover:bg-[#e9e9e9] dark:hover:bg-[rgba(0,0,0,0.1)] hover:text-[#c64a4a] dark:hover:text-[#c64a4a] transition-colors duration-200 font-semibold dark:text-darkText'
+                    >
+                      <Link to={sublink.url}>{sublink.name}</Link>
+                    </span>
+                  )
+                })}
+              </div>
+            </div>
           </li>
           <li className='flex items-center gap-1 relative cursor-pointer py-[.6rem] group'>
             <span
               href='#a'
-              className={`capitalize lg:text-[18px] xl:text-[18px] font-medium ${
+              className={`capitalize lg:text-[15px] xl:text-[17px] font-medium ${
                 isSticky ? "dark:text-darkText" : "text-white"
               } `}
             >
@@ -160,7 +182,7 @@ const Header = ({ isSticky }) => {
           <li>
             <a
               href='#faqs'
-              className={`lg:text-[18px] xl:text-[18px] font-medium ${
+              className={`lg:text-[15px] xl:text-[17px] font-medium ${
                 isSticky ? "dark:text-darkText" : "text-white"
               } `}
             >
@@ -170,7 +192,7 @@ const Header = ({ isSticky }) => {
           <li>
             <a
               href='#contact-us'
-              className={`lg:text-[18px] xl:text-[18px] font-medium ${
+              className={`lg:text-[15px] xl:text-[17px] font-medium ${
                 isSticky ? "dark:text-darkText" : "text-white"
               } `}
             >
@@ -185,7 +207,8 @@ const Header = ({ isSticky }) => {
           href='https://portal.epahubb.com/sign-in/'
           target='_blank'
           rel='noreferrer'
-          className={`capitalize text-lg hidden bg-[${selectedColor}] text-white lg:block lg:px-[1rem] lg:py-[.3rem] xl:px-[2rem] xl:py-[.6rem] rounded-[.2rem] font-medium`}
+          className={`capitalize text-sm xl-[0.9rem] hidden bg-[${selectedColor}] text-white lg:block lg:px-[1rem] lg:py-[.3rem] xl:px-[2rem] xl:py-[.6rem] rounded-[.2rem] font-medium`}
+          style={{ backgroundColor: selectedColor }}
         >
           Sign In
         </a>
