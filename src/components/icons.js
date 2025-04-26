@@ -117,6 +117,94 @@ export const Board = () => {
   )
 }
 
+export const Cloud = () => {
+  const { selectedColor } = useGlobalContext()
+
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke-width='1.5'
+      stroke='currentColor'
+      className='w-[3rem] h-[3rem] xl:w-[4rem] xl:h-[4rem]'
+      style={{ color: selectedColor }}
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z'
+      />
+    </svg>
+  )
+}
+
+export const Data = ()=> {
+  const { selectedColor } = useGlobalContext()
+
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke-width='1.5'
+      stroke='currentColor'
+      className='w-[3rem] h-[3rem] xl:w-[4rem] xl:h-[4rem]'
+      style={{ color: selectedColor }}
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125'
+      />
+    </svg>
+  )
+}
+
+export const Protected = () => {
+   const { selectedColor } = useGlobalContext()
+
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke-width='1.5'
+      stroke='currentColor'
+      className='w-[3rem] h-[3rem] xl:w-[4rem] xl:h-[4rem]'
+      style={{ color: selectedColor }}
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z'
+      />
+    </svg>
+  )
+}
+
+export const Encrypt = () =>{
+  const { selectedColor } = useGlobalContext()
+
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke-width='1.5'
+      stroke='currentColor'
+      className='w-[3rem] h-[3rem] xl:w-[4rem] xl:h-[4rem]'
+      style={{ color: selectedColor }}
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6'
+      />
+    </svg>
+  )
+} 
+
 export const Graph = () => {
   const { selectedColor } = useGlobalContext()
 
@@ -131,6 +219,50 @@ export const Graph = () => {
       fill='currentColor'
     >
       <path d='M5 20v2h-2v-2h2zm2-2h-6v6h6v-6zm6-1v5h-2v-5h2zm2-2h-6v9h6v-9zm6-2v9h-2v-9h2zm2-2h-6v13h6v-13zm0-11l-6 1.221 1.716 1.708-6.85 6.733-3.001-3.002-7.841 7.797 1.41 1.418 6.427-6.39 2.991 2.993 8.28-8.137 1.667 1.66 1.201-6.001z' />
+    </svg>
+  )
+}
+
+export const Security = () => {
+  const { selectedColor } = useGlobalContext()
+
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke-width='1.5'
+      stroke='currentColor'
+      className='w-[3rem] h-[3rem] xl:w-[4rem] xl:h-[4rem]'
+      style={{ color: selectedColor }}
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z'
+      />
+    </svg>
+  )
+}
+
+export const Desktop = () => {
+  const { selectedColor } = useGlobalContext()
+
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke-width='1.5'
+      stroke='currentColor'
+      className='w-[3rem] h-[3rem] xl:w-[4rem] xl:h-[4rem]'
+      style={{ color: selectedColor }}
+    >
+      <path
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        d='M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25'
+      />
     </svg>
   )
 }

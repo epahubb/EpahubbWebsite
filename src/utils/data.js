@@ -1,5 +1,5 @@
 import { assets } from "../assets/assets"
-import { Board, Bulb, Chart,Shield, Table, Trophy } from "../components/icons"
+import { Board, Bulb, Chart,Cloud,Data,Desktop,Encrypt,Protected,Security,Shield, Table, Trophy } from "../components/icons"
 
 // export const databaseUrl = "http://localhost:8000"
 export const databaseUrl = "https://portal.epahubb.com"
@@ -175,6 +175,51 @@ export const company = [
     id: 1,
     link: "#contact-us",
     name:'Contact Us'
+  },
+]
+
+export const itConsultancy = [
+  {
+    id: 1,
+    title: "IT Strategy & Digital Transformation",
+    description:
+      "IT Strategy & Digital Transformation aligns technology with business goals, integrating AI, IoT, and automation for efficiency, scalability, and innovation.",
+    icons: <Encrypt />,
+  },
+  {
+    id: 2,
+    title: "Software & Web Development Consulting",
+    description:
+      "Software & Web Development Consulting advises on custom software, mobile apps, and web solutions, ensuring performance, security, scalability, and seamless user experience.",
+    icons: <Desktop />,
+  },
+  {
+    id: 3,
+    title: "Cybersecurity Consulting",
+    description:
+      "Cybersecurity Consulting assesses risks, implements security frameworks, ensures compliance, and protects data, networks, and systems from evolving cyber threats.",
+    icons: <Security />,
+  },
+  {
+    id: 4,
+    title: "Data Analytics and Business Intelligence",
+    description:
+      "Data Analytics & Business Intelligence leverages AI-driven insights to enhance decision-making, optimize operations, and uncover growth opportunities through advanced data analysis.",
+    icons: <Data />,
+  },
+  {
+    id: 5,
+    title: "Cloud Computing & Infrastructure",
+    description:
+      "Cloud Computing & Infrastructure focuses on cloud migration, management, security, and optimization, ensuring scalable, cost-effective, and efficient IT operations.",
+    icons: <Protected />,
+  },
+  {
+    id: 6,
+    title: "IT Support and Managed Services",
+    description:
+      "IT Support & Managed Services provides 24/7 technical support, system monitoring, and maintenance to ensure seamless, secure, and efficient business operations.",
+    icons: <Cloud />,
   },
 ]
 

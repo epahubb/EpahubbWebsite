@@ -1,3 +1,6 @@
 export {default as SoftwareAbout} from './SoftwareAbout'
 export {default as SoftwareHero} from './SoftwareHero'
 export {default as SoftwareHeader} from './SoftwareHeader'
+export {default as HallMark} from './HallMark'
+export {default as WebApplications} from './WebApplications'
+export {default as SoftwareDevelopment} from './SoftwareDevelopment'

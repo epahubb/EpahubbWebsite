@@ -6,7 +6,7 @@ import Sidebar from "../HomeSections/Sidebar"
 import { HamburgerDark, HamburgerWhite } from "../icons"
 import { MdOutlineArrowDropDown } from "react-icons/md"
 
-const CyberSecurityHeader = () => {
+const ItConsultancyHeader = () => {
   const { darkMode, openSidebar, closeSideBar, selectedColor, isSticky } =
     useGlobalContext()
 
@@ -22,51 +22,25 @@ const CyberSecurityHeader = () => {
     ${
       isSticky
         ? "lg:fixed shadow-sm bg-[#FFFFFFFA] dark:bg-[#1d222f] lg:bg-white-transparent lg:backdrop-blur-md lg:dark:bg-[#1d222f] xl:h-[8.7vh]"
-        : "lg:bg-primaryBackground dark:bg-[#1d222f] lg:dark:bg-primaryBackground"
+        : "lg:bg-itHeroBackground dark:bg-[#1d222f] lg:dark:bg-itHeroBackground"
     }`}
     >
       <Link to={"/"}>
-        {isSticky ? (
-          <>
-            {isSmallScreen ? (
-              <>
-                <img
-                  src={assets.epahubb_logo}
-                  className='w-[7.3rem] md:w-[8rem] lg:w-[8rem] xl:w-[9rem]'
-                  alt=''
-                />
-              </>
-            ) : (
-              <>
-                <img
-                  src={assets.epahubb_logo}
-                  className='w-[7.3rem] md:w-[8rem] lg:w-[7rem] xl:w-[8rem]'
-                  alt=''
-                />
-              </>
-            )}
-          </>
-        ) : (
-          <>
-            {isSmallScreen ? (
-              <>
-                <img
-                  src={assets.epahubb_logo}
-                  className='w-[7.3rem] md:w-[8rem] lg:w-[8rem] xl:w-[9rem]'
-                  alt=''
-                />
-              </>
-            ) : (
-              <>
-                <img
-                  src={assets.epahubb_logo_two}
-                  className='w-[7.3rem] md:w-[8rem] lg:w-[8rem] xl:w-[9rem]'
-                  alt=''
-                />
-              </>
-            )}
-          </>
-        )}
+        <img
+          src={
+            darkMode
+              ? !isSticky
+                ? isSmallScreen
+                  ? assets.epahubb_logo_two
+                  : assets.epahubb_general_logo
+                : assets.epahubb_logo_two
+              : assets.epahubb_general_logo
+          }
+          className={`w-[7.3rem] md:w-[8rem] lg:w-[8.5rem] xl:w-[9rem] ${
+            darkMode ? "h-[6rem] md:h-[6rem]" : "h-[6rem] md:h-[6rem]"
+          }`}
+          alt='epahubb logo'
+        />
       </Link>
 
       {/* links start */}
@@ -76,7 +50,7 @@ const CyberSecurityHeader = () => {
             <a
               href='#about-us'
               className={`capitalize lg:text-[15px] xl:text-[17px] font-medium ${
-                isSticky ? "dark:text-darkText" : "text-white"
+                isSticky ? "dark:text-white" : "text-black dark:text-black"
               }`}
             >
               <span>Company</span>
@@ -84,7 +58,7 @@ const CyberSecurityHeader = () => {
             <span>
               <MdOutlineArrowDropDown
                 className={`text-[1.5rem] ${
-                  isSticky ? "dark:text-darkText" : "text-white"
+                  isSticky ? "dark:text-white" : "text-black dark:text-black"
                 }`}
               />
             </span>
@@ -92,7 +66,10 @@ const CyberSecurityHeader = () => {
               <ul className='flex flex-col gap-[.5rem]'>
                 {company.map((item) => {
                   return (
-                    <span key={item.id} className='py-[.4rem] px-[.5rem] rounded-md hover:bg-[#e9e9e9] dark:hover:bg-[rgba(0,0,0,0.1)] hover:text-[#c64a4a] dark:hover:text-[#c64a4a] transition-colors duration-200 font-semibold dark:text-darkText'>
+                    <span
+                      key={item.id}
+                      className='py-[.4rem] px-[.5rem] rounded-md hover:bg-[#e9e9e9] dark:hover:bg-[rgba(0,0,0,0.1)] hover:text-[#c64a4a] dark:hover:text-[#c64a4a] transition-colors duration-200 font-semibold dark:text-darkText'
+                    >
                       <a href={item.link}>{item.name}</a>
                     </span>
                   )
@@ -104,7 +81,7 @@ const CyberSecurityHeader = () => {
             <a
               href='#features'
               className={`capitalize lg:text-[15px] xl:text-[17px] font-medium ${
-                isSticky ? "dark:text-darkText" : "text-white"
+                isSticky ? "dark:text-white" : "text-black dark:text-black"
               } `}
             >
               Services
@@ -112,7 +89,7 @@ const CyberSecurityHeader = () => {
             <span>
               <MdOutlineArrowDropDown
                 className={`text-[1.5rem] ${
-                  isSticky ? "dark:text-darkText" : "text-white"
+                  isSticky ? "dark:text-white" : "text-black dark:text-black"
                 }`}
               />
             </span>
@@ -135,7 +112,7 @@ const CyberSecurityHeader = () => {
             <span
               href='#a'
               className={`capitalize lg:text-[15px] xl:text-[17px] font-medium ${
-                isSticky ? "dark:text-darkText" : "text-white"
+                isSticky ? "dark:text-white" : "text-black dark:text-black"
               } `}
             >
               Products
@@ -143,7 +120,7 @@ const CyberSecurityHeader = () => {
             <span>
               <MdOutlineArrowDropDown
                 className={`text-[1.5rem] ${
-                  isSticky ? "dark:text-darkText" : "text-white"
+                  isSticky ? "dark:text-white" : "text-black dark:text-black"
                 }`}
               />
             </span>
@@ -174,7 +151,7 @@ const CyberSecurityHeader = () => {
             <a
               href='#contact-us'
               className={`lg:text-[15px] xl:text-[17px] font-medium ${
-                isSticky ? "dark:text-darkText" : "text-white"
+                isSticky ? "dark:text-white" : "text-black dark:text-black"
               } `}
             >
               Contact Us
@@ -204,4 +181,4 @@ const CyberSecurityHeader = () => {
   )
 }
 
-export default CyberSecurityHeader
+export default ItConsultancyHeader

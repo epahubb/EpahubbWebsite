@@ -1,10 +1,85 @@
+import { assets } from "../../assets/assets"
+
 const SoftwareHero = () => {
   return (
     <article
       id='about-us'
-      className='py-[4rem] mt-[8vh] lg:mt-[9vh] xl:mt-[10vh] flex flex-col gap-y-[3rem] xl:gap-[4%] md:flex-row px-[3%] 2xl:px-[10%] bg-itHeroBackground dark:bg-itHeroBackground'
+      className='relative py-[2rem] pb-[3rem] h-auto md:h-[33rem] lg:h-[37rem] xl:h-[42rem] 2xl:h-[45rem] mt-[8vh] lg:mt-[9vh] xl:mt-[10vh] pl-[3%] md:pl-[4%] md:pr-0 lg:pl-[6%] lg:pr-0 xl:pl-[12%] xl:pr-0 2xl:pl-[14%] 2xl:pr-0 bg-itHeroBackground dark:bg-itHeroBackground rounded-b-[2.4rem] sm:rounded-b-[4rem]'
     >
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam saepe ab natus omnis beatae quas, aperiam quaerat neque fugiat eum quia corrupti magni autem! Incidunt saepe nemo eligendi dolore perspiciatis laborum fuga quisquam, doloribus minus tenetur voluptates ratione laboriosam illo vel libero aliquid vitae id animi. Natus repellat cum, harum quasi exercitationem molestiae est minima eaque, similique eius vel reprehenderit earum accusamus expedita nemo, assumenda voluptas iusto rerum impedit culpa sed quas? Beatae ipsam pariatur eveniet, tempore sequi non porro ut possimus nam consectetur voluptatum commodi sunt architecto nulla itaque voluptatibus reprehenderit ea. Quam suscipit laudantium sit hic perspiciatis modi molestiae, accusantium sint praesentium harum asperiores minus quae explicabo, veniam nesciunt consequatur deserunt? Nobis ab distinctio amet aut, reprehenderit saepe possimus similique ut sequi ipsa deleniti autem quod cum dolorum voluptatibus. Soluta non labore quas deserunt minima et consequuntur doloremque sequi, ipsa nam laborum blanditiis vero autem, quos ad atque dignissimos! Optio voluptatem cupiditate magni veritatis corporis molestias! Id necessitatibus placeat quos exercitationem rerum voluptatibus voluptate doloribus, natus nesciunt rem! Mollitia minima possimus praesentium, sapiente fuga sequi adipisci, corporis accusantium sunt excepturi quod pariatur laboriosam officiis architecto natus aut consequuntur earum ab. Id molestias fuga possimus modi dignissimos, in ea alias dolores odio sint commodi inventore rem dolorum delectus corrupti accusamus ab suscipit, perferendis neque eveniet magnam sequi. Similique, totam? Veniam cumque sint iure, nulla placeat officia repudiandae temporibus magnam numquam facilis cupiditate magni laboriosam? Magni ab sed id assumenda, rem sint mollitia tenetur neque eveniet veniam eum vitae doloribus iure nihil dolorum error? Reiciendis nulla eius animi error exercitationem temporibus enim quam sit corrupti dignissimos, doloremque deleniti id voluptatibus nihil mollitia minus porro doloribus soluta itaque maxime rerum consequuntur officiis expedita? Fugiat, beatae ea! Iure, dicta culpa asperiores vel eius odio, maxime, consequatur ratione perspiciatis corporis suscipit dolor? Perferendis libero architecto delectus voluptatem dolor incidunt distinctio non modi nihil! Esse nihil dolor, aperiam aliquam similique eos. Nemo quasi possimus voluptatibus iste at incidunt repellat dicta, eaque nobis? Nobis similique, iure velit minima dolore ipsa maiores molestiae voluptatibus eligendi quisquam, aliquid quasi! Veritatis nesciunt quam voluptatem vel, totam ratione ipsum ut illum? Ratione in inventore, id sunt, labore vitae expedita placeat perferendis animi ex, quisquam voluptas corrupti nulla. Quidem natus magni consequuntur eum. Ex quis nobis ratione sunt ad cum quos excepturi adipisci placeat dolorum nisi facilis fugiat quas, eius illo voluptatem, atque obcaecati! Necessitatibus vel, explicabo deleniti recusandae amet voluptatum quis fugit ipsum, eligendi esse eum facilis, corrupti delectus sed voluptatibus expedita natus maiores quisquam ratione earum autem. Dolor voluptatum sequi exercitationem numquam unde cum soluta iste facere? Culpa minima soluta, quasi consequuntur officia voluptatum fugiat temporibus nam libero eum ipsam ipsa, qui odio consequatur eius blanditiis atque voluptatem distinctio doloribus, eligendi labore architecto nobis facilis. Doloribus quis quia minima veniam assumenda nisi? Incidunt quis, iusto eius placeat ut quo facere eaque reiciendis modi cum error nisi? Odio animi quidem fugiat fuga quo dolor delectus laborum maiores autem sed consectetur est, minus explicabo tempora provident voluptate ipsam voluptatibus quisquam, rerum repellat ad dolore. Quisquam commodi sint vitae nobis facilis laudantium laboriosam voluptates est adipisci cumque quasi repudiandae qui natus explicabo dolore, esse maxime nulla, hic temporibus error soluta atque rerum! Incidunt exercitationem, pariatur architecto consectetur tenetur suscipit quasi ipsam a repellendus totam hic nulla assumenda aspernatur aut maxime natus dolor sunt ipsa excepturi itaque doloribus nihil facilis eius voluptatibus. Ducimus expedita deserunt eius ipsam numquam nulla aperiam repudiandae, pariatur voluptate aspernatur quo possimus fugit explicabo magni sint molestiae corrupti iusto tempore, optio ab, eveniet dignissimos eaque ratione. Numquam voluptate corporis placeat dolore! Totam doloribus cumque, voluptatem nemo autem quos? Ad sit dolorum harum quidem, perspiciatis tempora. Necessitatibus incidunt exercitationem quia distinctio quasi inventore impedit tempora vero facilis, officia harum quibusdam libero ut id illum saepe ipsam, atque obcaecati explicabo a corrupti eveniet? Quis animi quae numquam similique, eius delectus porro repellat quaerat eveniet illo sequi sit obcaecati, voluptatem corporis magnam, dignissimos a ab maiores perspiciatis iusto. Esse doloribus nam facilis illo aliquid velit, odio itaque atque voluptatum eos dolore nihil natus ut. Assumenda alias adipisci ut corrupti natus veniam pariatur soluta beatae explicabo voluptatem ratione, laudantium, eligendi possimus labore aliquam ipsa est fugit? Esse harum reprehenderit quod debitis quos temporibus at voluptate asperiores animi dicta exercitationem quasi incidunt cumque eveniet sunt atque, ad provident. Eius facilis libero, voluptatum quo officiis quos sed expedita reiciendis nemo repudiandae corrupti corporis. Nemo rerum ea facilis earum voluptates nobis dolorum quae laborum atque voluptatem maxime quia quaerat, distinctio iure dolorem veritatis nam molestias adipisci. Temporibus porro minus nostrum incidunt alias iure nisi sed odit vel distinctio commodi, est sint? Sint repellat veritatis fuga repudiandae et culpa voluptatibus, perferendis numquam, fugiat illo recusandae aspernatur laboriosam? Rerum quos veritatis fugiat laborum molestias cum nemo labore commodi debitis. Perferendis sed officia et dolorum, iure esse nihil. Esse non doloribus, quidem voluptate repellendus at expedita mollitia corporis, accusamus sit cupiditate quam aspernatur fugit magnam repellat aliquid a. Vitae facere porro, neque labore officia est? Totam beatae hic a laboriosam eum eius aperiam? Consectetur omnis possimus non repellendus dolorem autem vel cum iste! Odio rerum nam fuga! Quam quia magnam laborum dicta autem sint consectetur doloremque ducimus voluptatibus commodi deserunt ut quos, repellat odio qui unde! Quos aliquam consequuntur dolorem. Ad commodi iure itaque illo magnam! Fugit illum voluptatem ut ad non, corporis sequi animi exercitationem rem totam? Excepturi eveniet perspiciatis nostrum officiis error omnis obcaecati nobis accusamus velit quam accusantium libero, aspernatur nemo reiciendis, iste eligendi qui unde, veritatis ipsam? Accusamus minus doloremque, facere, laborum tenetur asperiores optio laboriosam dignissimos illo, saepe pariatur voluptate consequuntur! Voluptate cum cumque porro earum! Eos fugiat fugit ipsum numquam architecto consectetur temporibus harum eveniet, tempora officiis obcaecati vel ullam est dolores in molestiae suscipit, accusantium, tenetur aut nihil. Facilis, cum eum soluta, saepe, optio delectus libero ducimus neque at deserunt laboriosam harum. Unde porro voluptate eos assumenda consectetur aliquam tempora rem reprehenderit optio architecto dolore iusto sint adipisci, eaque ad obcaecati nam! Dolorem, laboriosam. Aut, quaerat in culpa esse quas hic?</p>
+      <div className='flex flex-col-reverse items-center md:flex-row gap-y-[2.5rem] gap-x-[2rem]'>
+        {/* first column */}
+        {/* section column */}
+        <div className='md:w-[80%] lg:w-[70%] xl:w-[55%] 2xl:w-[60%] pr-2 md:pr-0'>
+          {/* first one */}
+          <div className='flex flex-row gap-x-[.8rem] group'>
+            <div className='flex items-center justify-center flex-col gap-y-[1rem] md:gap-y-[.5rem] xl:gap-y-[1rem]'>
+              <h1
+                className={`w-[2.5rem] h-[2.5rem] xl:w-[3rem] xl:h-[3rem] flex items-center justify-center rounded-full bg-[#BE6CBE] font-bold text-white text-[20px] border-2 border-transparent transition-all duration-500 ease-in-out group-hover:bg-transparent group-hover:border-[2.5px] group-hover:border-[#BE6CBE] group-hover:text-[#BE6CBE] group-hover:scale-110`}
+              >
+                1
+              </h1>
+              <div className='w-[.13rem] h-[4rem] md:h-[3rem] bg-gray-300 xl:h-[5rem] 2xl:w-[.125rem] 2xl:h-[5.5rem]'></div>
+            </div>
+            <div>
+              <h2 className='text-lightHeading font-semibold text-[19px] md:text-[17px] xl:text-[22px] 2xl:text-[25px]'>
+                Website and Web Application Developments
+              </h2>
+              <p className='font-rubik mt-[1rem] text-lightText text-[14px] xl:text-[17px] 2xl:w-[70%] 2xl:text-[18.8px]'>
+                Epahubb creates responsive, secure, and SEO-optimized websites,
+                including e-commerce, CMS, and custom web applications.
+              </p>
+            </div>
+          </div>
+          {/* first end */}
+          {/* second */}
+          <div className='flex flex-row gap-x-[.8rem] mt-[1rem] xl:mt-[1.5rem] group'>
+            <div className='flex items-center justify-center flex-col gap-y-[1rem] md:gap-y-[.5rem] xl:gap-y-[1rem]'>
+              <h1 className='w-[2.5rem] h-[2.5rem] xl:w-[3rem] xl:h-[3rem] flex items-center justify-center rounded-full bg-[#BE6CBE] font-bold text-white text-[20px] border-2 border-transparent transition-all duration-500 ease-in-out group-hover:bg-transparent group-hover:border-[2.5px] group-hover:border-[#BE6CBE] group-hover:text-[#BE6CBE] group-hover:scale-110'>
+                2
+              </h1>
+              <div className='w-[.13rem] h-[4rem] md:h-[3rem] bg-gray-300 xl:h-[5rem] 2xl:w-[.125rem] 2xl:h-[5.5rem]'></div>
+            </div>
+            <div>
+              <h2 className=' text-lightHeading font-semibold text-[19px] md:text-[17px] xl:text-[22px] 2xl:text-[25px]'>
+                Software Development
+              </h2>
+              <p className='font-rubik mt-[1rem] text-lightText text-[14px] xl:text-[17px] 2xl:w-[70%] 2xl:text-[18.8px]'>
+                Epahubb develops custom, secure, and scalable software
+                solutions, including mobile, web, and enterprise applications.
+              </p>
+            </div>
+          </div>
+          {/* second end */}
+          {/* third start */}
+          <div className='flex flex-row items-start gap-x-[.8rem] mt-[1rem] xl:mt-[1.5rem] group'>
+            <div className='flex items-center justify-center flex-col gap-y-[1rem] md:gap-y-[.5rem] xl:gap-y-[1rem]'>
+              <h1 className='w-[2.5rem] h-[2.5rem] xl:w-[3rem] xl:h-[3rem] flex items-center justify-center rounded-full bg-[#BE6CBE] font-bold text-white text-[20px] border-2 border-transparent transition-all duration-500 ease-in-out group-hover:bg-transparent group-hover:border-[2.5px] group-hover:border-[#BE6CBE] group-hover:text-[#BE6CBE] group-hover:scale-110'>
+                3
+              </h1>
+            </div>
+            <div>
+              <h2 className=' text-lightHeading font-semibold text-[19px] md:text-[17px] xl:text-[22px] 2xl:text-[25px]'>
+                Mobile Application Development
+              </h2>
+              <p className='font-rubik mt-[1rem] text-lightText text-[14px] xl:text-[17px] 2xl:w-[70%] 2xl:text-[18.8px]'>
+                Epahubb develops secure, scalable, and user-friendly mobile apps
+                for iOS, Android, and cross-platform solutions.
+              </p>
+            </div>
+          </div>
+          {/* third end */}
+        </div>
+        <div className='md:w-[80%] lg:w-auto'>
+          <img src={assets.epahubb_software_hero} alt='' />
+        </div>
+      </div>
+      <svg
+        className='absolute bottom-0 left-0 w-full h-10 sm:h-12 text-white dark:text-primaryDark'
+        viewBox='0 0 100 10'
+        preserveAspectRatio='none'
+      >
+        <path d='M0,0 C25,10 75,10 100,0 V10 H0 Z' fill='currentColor' />
+      </svg>
     </article>
   )
 }

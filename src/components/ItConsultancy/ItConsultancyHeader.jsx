@@ -37,7 +37,7 @@ const ItConsultancyHeader = () => {
               : assets.epahubb_general_logo
           }
           className={`w-[7.3rem] md:w-[8rem] lg:w-[8.5rem] xl:w-[9rem] ${
-            darkMode ? "h-[5rem] md:h-[6rem]" : "h-[5rem] md:h-[6rem]"
+            darkMode ? "h-[6rem] md:h-[6rem]" : "h-[6rem] md:h-[6rem]"
           }`}
           alt='epahubb logo'
         />
